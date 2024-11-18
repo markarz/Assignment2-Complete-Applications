@@ -161,7 +161,7 @@ ex:
 Stride1=1,Stride2=1
 Array1[] = {1,2,3}
 Array2[] = {4,5,6}
-![image]([picture or gif url](https://github.com/markarz/Assignment2-Complete-Applications/blob/main/dot.png))
+![image]((https://github.com/markarz/Assignment2-Complete-Applications/blob/main/dot.png)
 Ans = 1 \times 5 + 2 \times 7
 $$
 
