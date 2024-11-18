@@ -156,7 +156,7 @@ set_error_36:
 #### explain
 This function calculates sum(Array1[i * stride1] * Array2[i * stride2]).
 
-ex:
+##### ex:
 ![image](https://github.com/markarz/Assignment2-Complete-Applications/blob/main/dot.png)
 
 
