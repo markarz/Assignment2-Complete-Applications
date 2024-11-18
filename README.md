@@ -23,7 +23,7 @@ Need to complete the code for the following file and pass the test cases.
     lw t0,0(a0)
     bge t0, zero, done
     sub t0,zero,t0
-    sw t0,0(a0)
+    sw t0,0(a0)'''
 done:
     # Epilogue
     jr ra
