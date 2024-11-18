@@ -15,7 +15,7 @@ Need to complete the code for the following file and pass the test cases.
 
 ## Usage
 ### abs.s:
-   ```js
+   ```
     abs:
     # Prologue
     ebreak
@@ -24,7 +24,6 @@ Need to complete the code for the following file and pass the test cases.
     bge t0, zero, done
     sub t0,zero,t0
     sw t0,0(a0)
-
 done:
     # Epilogue
     jr ra
