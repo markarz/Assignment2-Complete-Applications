@@ -161,12 +161,12 @@ ex:
 Stride1=1,Stride2=1
 Array1[] = {1,2,3}
 Array2[] = {4,5,6}
-Ans = 1*4+2*5+3*6
+$$ Ans = 1*4+2*5+3*6
 
 Stride1=1,Stride2=2 
 Array1[] = {1,2,3,4}
 Array2[] = {5,6,7,8}
-Ans = 1*5+2*7
+$$　Ans = 1*5+2*7
 
 My approach is to first calculate the addresses of both arrays, then use registers to load the values stored at those addresses (for both arrays). After that, I multiply the two values stored in the registers (t5 * t6), and store the result in another register (t2). Finally, I accumulate the result into another register (t0 = t0 + t2). Since the values of stride1 and stride2 are not necessarily 1, each iteration will adjust the array indices by adding stride1 to array1_index and stride2 to array2_index.
 
