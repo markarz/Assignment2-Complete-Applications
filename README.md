@@ -157,6 +157,7 @@ set_error_36:
 This function calculates sum(Array1[i * stride1] * Array2[i * stride2]).
 
 ex:
+
 Stride1=1,Stride2=1
 Array1[] = {1,2,3}
 Array2[] = {4,5,6}
