@@ -161,14 +161,7 @@ ex:
 Stride1=1,Stride2=1
 Array1[] = {1,2,3}
 Array2[] = {4,5,6}
-$$
-Ans = 1 \times 4 + 2 \times 5 + 3 \times 6
-$$
-
-Stride1=1,Stride2=2 
-Array1[] = {1,2,3,4}
-Array2[] = {5,6,7,8}
-$$
+![image]([picture or gif url](https://github.com/markarz/Assignment2-Complete-Applications/blob/main/dot.png))
 Ans = 1 \times 5 + 2 \times 7
 $$
 
