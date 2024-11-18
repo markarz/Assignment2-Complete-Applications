@@ -124,7 +124,7 @@ dot:
     li t3, 0  # array1 index
     li t4, 0  # array2 index 
 
-loop_start:
+loop_start:#a3:array1's stride = stride1 , a4:array2's stride = stride2
     bge t1, a2, loop_end    # If t1 >= a2, exit the loop (i >= size) 
     slli t2, t3, 2          # t2 = t3 * 4 (calculate byte offset for first array)
     add t2, a0, t2          # t2 = base address + offset (address of array1[i])
@@ -154,9 +154,19 @@ set_error_36:
 
 ```
 #### explain
+This function calculates sum(Array1[i * stride1] * Array2[i * stride2]).
+ex:
+Stride1=1,Stride2=1
+Array1[] = {1,2,3}
+Array2[] = {4,5,6}
+Ans = 1*4+2*5+3*6
 
+Stride1=1,Stride2=2 
+Array1[] = {1,2,3,4}
+Array2[] = {5,6,7,8}
+Ans = 1*5+2*7
 
-My approach is to check if a value in the array is less than 0, and if so, directly replace it with 0 at the current array position.
+My approach is to first calculate the addresses of both arrays, then use registers to load the values stored at those addresses (for both arrays). After that, I multiply the two values stored in the registers (t5 * t6), and store the result in another register (t2). Finally, I accumulate the result into another register (t0 = t0 + t2). Since the values of stride1 and stride2 are not necessarily 1, each iteration will adjust the array indices by adding stride1 to array1_index and stride2 to array2_index.
 
 
 ## Useful Resources
