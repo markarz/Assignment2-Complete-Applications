@@ -161,7 +161,7 @@ ex:
 Stride1=1,Stride2=1
 Array1[] = {1,2,3}
 Array2[] = {4,5,6}
-$$ Ans = 1*4+2*5+3*6　$$
+$ Ans = 1*4+2*5+3*6　$
 
 Stride1=1,Stride2=2 
 Array1[] = {1,2,3,4}
