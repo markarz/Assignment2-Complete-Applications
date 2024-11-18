@@ -1,6 +1,5 @@
-# Project Name
+# Complete Applications
 
-A paragraph containing a high-level description of the project, main features and remarks.
 
 ## Requirements
 
