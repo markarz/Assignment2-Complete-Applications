@@ -15,7 +15,7 @@ Need to complete the code for the following file and pass the test cases.
 
 ## Usage
 ### abs.s:
-   ```
+   ```risc-v
     abs:
     # Prologue
     ebreak
@@ -27,7 +27,6 @@ Need to complete the code for the following file and pass the test cases.
 done:
     # Epilogue
     jr ra
-    ```
 
 
 ## Useful Resources
